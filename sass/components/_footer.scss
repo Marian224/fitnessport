@@ -1,0 +1,76 @@
+.response {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.footer {
+    background-color: $footer-bg-color;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.text-footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+
+
+// тулефон
+
+@media screen and (max-width: 768px) {
+    .response {
+        width: 435px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 100px;
+
+        &__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    .footer {
+        background-color: $footer-bg-color;
+        padding: 15px;
+        color: white;
+        text-align: center;
+    }
+
+    .text-footer {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh
+    }
+
+    .message-text {
+        margin-left: -49px;
+    }
+}

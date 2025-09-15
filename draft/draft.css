@@ -1,0 +1,243 @@
+
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+table caption {
+  text-align: left;
+}
+
+table {
+   border-collapse: collapse; 
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #2a2a2a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #212121;
+  background-color: #f9f9fd;
+}
+
+.pane {
+  display: none;
+  margin-top: 8px;
+}
+
+.pane.is-active {
+  display: block;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
+.menu {
+  
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction:row ;
+  justify-content:space-evenly;
+  align-items:flex-end;
+}
+
+.menu .link {
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+}
+
+.menu .link:hover {
+  text-decoration: underline;
+}
+
+
+.container {
+
+    display: flex;
+
+    border: 2px solid #333;
+
+    padding: 10px;
+
+    margin-top: 20px;
+
+    justify-content: space-around;
+
+}
+
+
+
+.item {
+
+    background-color: #f0f0f0;
+
+    border: 1px solid #ccc;
+
+    padding: 20px;
+
+    margin: 5px;
+
+    font-size: 1.2em;
+
+    text-align: center;
+
+    flex-basis: 20%;
+
+}
+
+
+
+.item-1 {
+
+    order:2;
+
+}
+
+
+
+.item-2 {
+
+    order: 3; 
+
+}
+
+
+
+.item-3 {
+
+    order: 4;
+
+}
+
+
+
+.item-4 {
+
+    order: 1; 
+
+}
+
+
+
+
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: sans-serif;
+   line-height: 1.5;
+   color: #2a2a2a;
+}
+
+.container {
+   max-width: 960px;
+   padding-left: 8px;
+   padding-right: 8px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.tile-set {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding-top: 40px;
+   gap: 30px;
+}
+
+.tile {
+   position: relative;
+   height: 120px;
+   flex-basis: calc(100% / 2 - 40px);
+   border: 2px dashed #2a2a2a;
+   border-radius: 4px;
+   background-color: #fff;
+
+   background-image: url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png");
+   background-size: 40px;
+}
+
+.tile::before {
+   position: absolute;
+   top: -32px;
+   width: 100%;
+   content: "";
+   font-weight: 700;
+   font-size: 20px;
+   text-align: center;
+}
+
+.no-repeat {
+   background-repeat: no-repeat;
+}
+
+.no-repeat::before {
+   content: "no-repeat";
+   font-family: monospace;
+}
+
+.repeat-x {
+   background-repeat: repeat-x;
+}
+
+.repeat-x::before {
+   content: "repeat-x";
+}
+
+.repeat-y {
+   background-repeat: repeat-y;
+}
+
+.repeat-y::before {
+   content: "repeat-y";
+}
+
+.repeat {
+   background-repeat: repeat;
+}
+
+.repeat::before {
+   content: "repeat";
+}
+
+
+.box::before {
+  content: 'Це текст в ::before';
+  font-size: 40px;
+  color: orange;
+}
+
+.box::after {
+  content: 'Це текст в ::after';
+  font-size: 30px;
+  color: teal;
+}

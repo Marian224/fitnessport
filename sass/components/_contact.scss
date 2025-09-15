@@ -1,0 +1,132 @@
+.contact {
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        list-style: none;
+        color: black;
+
+    }
+
+    &__center {
+        width: 700px;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    &__map {
+        border-radius: $img-border-radius;
+    }
+
+    &__boxblock {
+        width: 150px;
+        height: 45px;
+        border-radius: 2px;
+        background-color: rgb(207, 190, 190);
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+        transition-property: background-color, transform;
+        transition-duration: 600ms;
+        transition-timing-function: linear;
+        transition-delay: 0;
+    }
+
+
+    &__boxblock:hover {
+        background-color: rgb(3, 165, 157);
+        transform: rotate(360deg);
+    }
+
+    /* посилання */
+
+    &__link {
+        text-decoration: none;
+        font-family: sans-serif;
+        color: black;
+        padding: 5px 5px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    &__img {
+        width: 15px;
+    }
+}
+
+
+// тулефон
+
+@media screen and (max-width: 768px) {
+    .contact {
+
+        &__list {
+            margin-left: -40px;
+            width: 430px;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            list-style: none;
+            color: black;
+
+        }
+
+        &__center {
+            width: 700px;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+
+        &__map {
+            border-radius: $img-border-radius;
+            margin-left: -267px;
+            width: 400px;
+        }
+
+        &__boxblock {
+
+            width: 124px;
+            height: 38px;
+            border-radius: 20px;
+            background-color: rgb(207, 190, 190);
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+            transition-property: background-color, transform;
+            transition-duration: 600ms;
+            transition-timing-function: linear;
+            transition-delay: 0;
+        }
+
+
+        &__boxblock:hover {
+            background-color: rgb(3, 165, 157);
+            transform: rotate(360deg);
+        }
+
+        /* посилання */
+
+        &__link {
+            text-decoration: none;
+            font-family: sans-serif;
+            color: black;
+            padding: 5px 5px;
+            width: 150px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        &__img {
+            width: 15px;
+        }
+    }
+
+}

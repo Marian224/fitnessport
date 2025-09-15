@@ -1,0 +1,64 @@
+.hall {
+
+    &__title {
+        font-family: $title-section;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+
+    &__photo {
+        border-radius: $img-border-radius;
+        display: block;
+        margin: 0 auto;
+        box-shadow: 2px 2px 9px 4px rgb(63, 61, 61);
+    }
+
+    &__text {
+        font-family: $font-paragraph;
+        padding: 10px;
+        text-indent: 10px;
+        line-height: 20px;
+        word-spacing: 5px;
+        max-height: 300px;
+    }
+
+}
+
+
+// тулефон
+
+@media screen and (max-width: 768px) {
+    .hall {
+        width: 500px;
+
+
+
+        &__title {
+            width: 393px;
+            font-family: $title-section;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        &__photo {
+            margin-left: 18px;
+            width: 350px;
+            $border-radius: $img-border-radius;
+            display: block;
+            // margin: 0 auto;
+            box-shadow: 2px 2px 9px 4px rgb(63, 61, 61);
+        }
+
+        &__text {
+            margin-left: 8px;
+            width: 350px;
+            font-family: $font-paragraph;
+            padding: 10px;
+            text-indent: 10px;
+            line-height: 20px;
+            word-spacing: 5px;
+            max-height: 250px;
+        }
+
+    }
+}

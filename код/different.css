@@ -1,0 +1,123 @@
+.box::before {
+  content: 'Це текст в ::before';
+  font-size: 40px;
+  color: orange;
+}
+
+.box::after {
+  content: 'Це текст в ::after';
+  font-size: 30px;
+  color: teal;
+}
+
+.box:hover::before {
+  color: green;
+}
+
+
+.box:hover::after {
+  color: tomato;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+.list {
+  margin: 0;
+  list-style: none;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.list-link {
+  display: inline-flex;
+  align-items: center;
+  color: currentColor;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.list-link:hover {
+  color: #2196f3;
+}
+
+.list-link::before,
+.list-link::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+}
+
+/* Adds and hides eyes icon after the link text */
+.list-link::after {
+  display: none;
+  margin-left: 16px;
+  background-image: url("https://klike.net/uploads/posts/2019-09/1568622559_19.jpg")
+}
+
+/* Show arrow icon on hover */
+.list-link:hover::after {
+  display: block;
+}
+
+
+.btn-buy:active{
+  box-shadow: inset 10px 10px 10px 5px rgba(red, green, blue, alpha);
+  color: red;
+}
+
+.btn-buy{
+  font-size: 50px;
+}
+
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #bdbdbd;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3f51b5;
+
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.box:hover .overlay {
+  transform: translatey(0);
+}
+
+.overlay p {
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.overlay code {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #2a2a2a;
+}

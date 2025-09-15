@@ -1,0 +1,177 @@
+@import '../utils/extends';
+
+.lobby {
+    padding: 30px;
+
+    &__block {
+        display: flex;
+        gap: 30px;
+
+    }
+
+    /* перехід */
+
+    &__box {
+        @extend .mini-box-size;
+        // width: 300px;
+        // height: 300px;
+        border-radius: 10px;
+        background-color: tomato;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+        /*  Set transition values  */
+        transition-property: background-color, transform;
+        transition-duration: 1000ms;
+        transition-timing-function: linear;
+        transition-delay: 0;
+    }
+
+    /* On hover, change the values of animated properties */
+    &__box:hover {
+        background-color: teal;
+        transform: rotate(360deg);
+    }
+
+    &__box-contact {
+        width: 150px;
+        height: 45px;
+        border-radius: 2px;
+        background-color: rgb(207, 190, 190);
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+        /*  Set transition values  */
+        transition-property: background-color, transform;
+        transition-duration: 600ms;
+        transition-timing-function: linear;
+        transition-delay: 0;
+    }
+
+    /* On hover, change the values of animated properties */
+    &__box-contact:hover {
+        background-color: rgb(3, 165, 157);
+        transform: rotate(360deg);
+    }
+
+}
+
+.iframe-map {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.interesting {
+
+    &__answer {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    &__question {
+        font-family: "Bitter", serif;
+    }
+
+}
+
+
+// тулефон
+
+@media screen and (max-width: 768px) {
+    @import '../utils/extends';
+
+    .mini-box-size-iframe{
+        width: 350px;
+        height: 250px;
+        margin-left: 8px;
+    }
+
+    .text-margin{
+        margin-left: -18px;
+    }
+    
+    .lobby {
+        padding: 30px;
+        // border: 1px solid black;
+        width: 500px;
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+        }
+
+        /* перехід */
+
+        &__box {
+            // @extend .mini-box-size;
+            // width: 300px;
+            // height: 300px;
+            border-radius: 10px;
+            background-color: tomato;
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+            /*  Set transition values  */
+            transition-property: background-color, transform;
+            transition-duration: 1000ms;
+            transition-timing-function: linear;
+            transition-delay: 0;
+        }
+
+        /* On hover, change the values of animated properties */
+        &__box:hover {
+            background-color: teal;
+            transform: rotate(360deg);
+        }
+
+        &__box-contact {
+            width: 150px;
+            height: 45px;
+            border-radius: 2px;
+            background-color: rgb(207, 190, 190);
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+            /*  Set transition values  */
+            transition-property: background-color, transform;
+            transition-duration: 600ms;
+            transition-timing-function: linear;
+            transition-delay: 0;
+        }
+
+        /* On hover, change the values of animated properties */
+        &__box-contact:hover {
+            background-color: rgb(3, 165, 157);
+            transform: rotate(360deg);
+        }
+
+    }
+
+    .iframe-map {
+        margin-left: 8px;
+        width: 368px;
+        // margin: 0 auto;
+        // width: 100%;
+    }
+
+    .map {
+        width: 500px;
+    }
+
+
+    .interesting {
+        width: 500px;
+        margin-left: 8px;
+
+        &__answer {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        &__question {
+            font-family: "Bitter", serif;
+        }
+
+    }
+}

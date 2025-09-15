@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="svg.css">
+</head>
+
+<body>
+
+
+    <svg width="400" height="300" style="outline: 2px dashed #2a2a2a;">
+        <rect width="250" height="150" fill="tomato" stroke="#2a2a2a" stroke-width="4" x="30" y="20" rx="30" />
+        <rect width="250" height="150" fill="green" stroke="#2a2a5f" stroke-width="4" x="120" y="120" rx="60" ry="30" />
+    </svg>
+
+
+    <svg width="400" height="300" style="outline: 2px dashed #2a2a2a;">
+        <circle r="100" cx="200" cy="150" fill="tomato" stroke="#2a2a2a" stroke-width="4" />
+    </svg>
+
+
+    <svg width="400" height="300" style="outline: 2px dashed #2a2a2a;">
+        <ellipse rx="150" ry="100" cx="200" cy="150" fill="tomato" stroke="#2a2a2a" stroke-width="4" />
+    </svg>
+
+
+    <svg width="400" height="300" style="outline: 2px dashed #2a2a2a;">
+        <line x1="20" y1="50" x2="380" y2="50" stroke="#2a2a2a" stroke-width="16" />
+        <line x1="20" y1="80" x2="380" y2="80" stroke="#2a2a2a" stroke-width="16" />
+        <line x1="20" y1="110" x2="380" y2="110" stroke="#2a2a2a" stroke-width="16" />
+        <line x1="200" y1="-220" x2="200" y2="300" stroke="red" stroke-width="16" />
+    </svg>
+
+
+    <svg width="600" height="300" style="outline: 2px dashed #2a2a2a;">
+        <!-- Square -->
+        <polygon points="20,20 20,200 200,200 200,20" fill="orange" stroke="#2a2a2a" stroke-width="4" />
+
+        <!-- Triangle -->
+        <polygon points="250,20 250,200 400,200" fill="skyblue" stroke="#2a2a2a" stroke-width="4" />
+
+        <!-- Parallelogram -->
+        <polygon points="430,20 430,200 550,250 550, 70" fill="palevioletred" stroke="#2a2a2a" stroke-width="4" />
+
+        <polygon points="20,210 23,250 70,250 " fill="green" stroke="black" stroke-width="4" />
+    </svg>
+
+
+    <svg viewBox="0 -10 511.991 511" xmlns="http://www.w3.org/2000/svg" width="300" height="300"
+        style="outline: 2px dashed #2a2a2a;">
+        <path
+            d="M510.652 185.883a27.177 27.177 0 00-23.402-18.688l-147.797-13.418-58.41-136.75C276.73 6.98 266.918.497 255.996.497s-20.738 6.483-25.023 16.53l-58.41 136.75-147.82 13.418c-10.837 1-20.013 8.34-23.403 18.688a27.25 27.25 0 007.937 28.926L121 312.773 88.059 457.86c-2.41 10.668 1.73 21.7 10.582 28.098a27.087 27.087 0 0015.957 5.184 27.14 27.14 0 0013.953-3.86l127.445-76.203 127.422 76.203a27.197 27.197 0 0029.934-1.324c8.851-6.398 12.992-17.43 10.582-28.098l-32.942-145.086 111.723-97.964a27.246 27.246 0 007.937-28.926zM258.45 409.605"
+            fill="#2a2a2a" />
+    </svg>
+
+<!--  -->
+
+
+    <svg aria-hidden="true" style="position:absolute;width:0;height:0" xmlns="http://www.w3.org/2000/svg"
+        overflow="hidden">
+        <defs>
+            <!-- Trash can icon -->
+            <symbol id="delete" viewBox="0 0 32 32">
+                <path
+                    d="M8 25.333C8 26.8 9.2 28 10.667 28h10.667c1.467 0 2.667-1.2 2.667-2.667v-16h-16v16zm17.333-20h-4.667L19.333 4h-6.667l-1.333 1.333H6.666V8h18.667V5.333z" />
+            </symbol>
+            <!-- Camera icon -->
+            <symbol id="camera" viewBox="0 0 32 32">
+                <path d="M20.267 16a4.267 4.267 0 11-8.534 0 4.267 4.267 0 018.534 0z" />
+                <path
+                    d="M12 2.667L9.56 5.334H5.333a2.675 2.675 0 00-2.667 2.667v16c0 1.467 1.2 2.667 2.667 2.667h21.333c1.467 0 2.667-1.2 2.667-2.667v-16c0-1.467-1.2-2.667-2.667-2.667h-4.227l-2.44-2.667h-8zm4 20c-3.68 0-6.667-2.987-6.667-6.667S12.32 9.333 16 9.333 22.667 12.32 22.667 16 19.68 22.667 16 22.667z" />
+            </symbol>
+            <!-- Portfolio icon -->
+            <symbol id="work" viewBox="0 0 32 32">
+                <path
+                    d="M26.667 8h-5.333V5.333a2.658 2.658 0 00-2.667-2.667h-5.333a2.658 2.658 0 00-2.667 2.667V8H5.334a2.646 2.646 0 00-2.653 2.667l-.013 14.667a2.658 2.658 0 002.667 2.667h21.333a2.658 2.658 0 002.667-2.667V10.667A2.658 2.658 0 0026.668 8zm-8 0h-5.333V5.333h5.333V8z" />
+            </symbol>
+        </defs>
+    </svg>
+
+    <ul class="icon-list">
+        <li>
+            <svg class="icon" width="80" height="80">
+                <use href="#delete"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="icon" width="80" height="80">
+                <use href="#camera"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="icon" width="80" height="80">
+                <use href="#work"></use>
+            </svg>
+        </li>
+
+        <li>
+            <svg class="icon" width="80" height="80">
+                <use href="./symbol-defs.svg#icon-file-picture"></use>
+            </svg>
+        </li>
+    </ul>
+
+</body>
+
+</html>

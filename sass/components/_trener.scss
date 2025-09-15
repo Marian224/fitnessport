@@ -1,0 +1,267 @@
+@import '../utils/extends';
+
+.trener {
+
+    &__pane {
+        display: none;
+        margin-top: 8px;
+
+    }
+
+    &__pane-is-active {
+        display: block;
+    }
+
+    &__text {
+        width: 400px;
+    }
+
+    &__card {
+        border: 1px solid black;
+        padding: 20px;
+        margin: 0 auto;
+        width: 900px;
+
+    }
+
+    &__title {
+        font-family: "Cormorant SC", serif;
+    }
+
+    &__flex {
+        @extend .flex-wrap-center;
+        gap: 30px;
+        flex-basis: calc((100% - 20px) / 3);
+    }
+
+    &__post::before,
+    &__post::after {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 15px;
+        left: 10px;
+        width: 50%;
+        top: 80%;
+        max-width: 300px;
+        background: #777;
+        box-shadow: 0 15px 10px #777;
+        transform: rotate(-3deg);
+    }
+
+    &__post {
+        position: relative;
+        max-width: 600px;
+        padding: 0px;
+        border-radius: 4px;
+        line-height: 1.5;
+        font-family: sans-serif;
+        background-color: #fff;
+    }
+
+    &__post:after {
+        transform: rotate(3deg);
+        right: 10px;
+        left: auto;
+    }
+
+    &__photo {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        display: block;
+    }
+
+    &__table {
+        margin: 0px 50px;
+    }
+
+
+    &__table {
+        text-align: center;
+        font-family: "Bitter", serif;
+        border: 2px dashed black;
+    }
+
+    &__contact {
+        margin-top: 15px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        padding: 10px;
+
+    }
+
+    &__link:hover {
+        background-color: black;
+        color: white;
+    }
+
+    &__controls {
+        display: flex;
+        gap: 8px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        width: 100px;
+        border: 1px solid rgb(70, 69, 69);
+        border-radius: 6px;
+
+    }
+
+
+
+    &__description {
+        font-family: "Cormorant SC", serif;
+    }
+
+    body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        color: #212121;
+        background-color: #f9f9fd;
+    }
+
+}
+
+
+// тулефон
+
+@media screen and (max-width: 768px) {
+    .trener {
+
+        &__pane {
+            display: none;
+            margin-top: 8px;
+
+        }
+
+        &__pane-is-active {
+            display: block;
+        }
+
+        &__text {
+            width: 400px;
+        }
+
+        &__card {
+            border: 1px solid black;
+            padding: 20px;
+            margin: 0 auto;
+            width: 900px;
+
+        }
+
+        &__title {
+            width: 500px;
+            font-family: "Cormorant SC", serif;
+        }
+
+        &__flex {
+            // @extend .flex-wrap-center;
+            gap: 30px;
+            flex-basis: calc((100% - 20px) / 3);
+            width: 500px;
+        }
+
+        &__post::before,
+        &__post::after {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            bottom: 15px;
+            left: 10px;
+            width: 50%;
+            top: 80%;
+            max-width: 300px;
+            background: #777;
+            box-shadow: 0 15px 10px #777;
+            transform: rotate(-3deg);
+        }
+
+        &__post {
+            position: relative;
+            max-width: 600px;
+            padding: 0px;
+            border-radius: 4px;
+            line-height: 1.5;
+            font-family: sans-serif;
+            background-color: #fff;
+        }
+
+        &__post:after {
+            transform: rotate(3deg);
+            right: 10px;
+            left: auto;
+        }
+
+        &__photo {
+            width: 388px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            display: block;
+        }
+
+        &__table {
+            margin: 0px 50px;
+        }
+
+
+        &__table {
+            text-align: center;
+            font-family: "Bitter", serif;
+            border: 2px dashed black;
+        }
+
+        &__contact {
+            margin-top: 15px;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+
+        &__link:hover {
+            background-color: black;
+            color: white;
+        }
+
+        &__controls {
+            display: flex;
+            gap: 8px;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__button {
+            width: 100px;
+            border: 1px solid rgb(70, 69, 69);
+            border-radius: 6px;
+
+        }
+
+
+
+        &__description {
+            font-family: "Cormorant SC", serif;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.5;
+            color: #212121;
+            background-color: #f9f9fd;
+        }
+
+
+
+    }
+}

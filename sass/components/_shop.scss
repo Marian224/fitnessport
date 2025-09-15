@@ -1,0 +1,336 @@
+@import '../utils/extends';
+
+.shop {
+
+    &__list {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 800px;
+    }
+
+    &__item {
+        border: 1px solid black;
+        width: 350px;
+        padding: 5px;
+        box-shadow: 1px 1px 5px 1px black;
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        width: 150;
+
+    }
+
+    &__text {
+        padding: 20px 40px;
+        font-family: "Cormorant SC", serif;
+        text-align: center;
+    }
+
+    &__video {
+        margin: 0 auto;
+        width: 600px;
+        border-radius: var(--img-border-radius);
+    }
+
+
+    &__videos {
+        border-radius: 30px;
+    }
+
+    &__box {
+        position: relative;
+        // width: 300px;
+        // height: 300px;
+        @extend .mini-box-size;
+        margin: 0 auto;
+        // background-image: url("./img/4.webp");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .omega {
+        background-image: url("../img/ostrovit-omega3-vitamin-d3-k2.jpg");
+    }
+
+    .vitamindC {
+        background-image: url("../img/4.webp");
+    }
+
+    .vitamind3 {
+        background-image: url("../img/d3-5000-1.png");
+    }
+
+    .MultiVitamin {
+        background-image: url("../img/5.jpg");
+    }
+
+    .WheyProtein {
+        background-image: url("../img/7.png");
+    }
+
+    .Massap {
+        background-image: url("../img/d3-5000-1.png");
+    }
+
+    .Creatine {
+        background-image: url("../img/prime_kraft_creatine_monohydrate_pure_200-637x637.png");
+    }
+
+    .Bcaacaps {
+        background-image: url("../img/bcaa-3d-1.webp");
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #8a7088;
+        transform: translatey(100%);
+        transition: transform 250ms ease-in-out;
+    }
+
+    &__box:hover .overlay {
+        transform: translatey(0);
+    }
+
+    .overlay p {
+        color: #fff;
+        padding: 10px;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .overlay code {
+        display: inline-block;
+        padding: 2px 4px;
+        border-radius: 2px;
+        background-color: #fff;
+        color: #2a2a2a;
+    }
+
+    &__card {
+        width: 300px;
+    }
+
+    &__btn {
+        padding: 10px 14px;
+        background-color: $bg-btn-buy;
+        border: none;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    &__btn:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    &__btn:active {
+        background-color: rgb(48, 43, 43);
+    }
+
+}
+
+/* shop кнопки */
+.puff-in-hor:hover {
+    animation: puff-in-hor 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+
+@keyframes puff-in-hor {
+    0% {
+        transform: scaleX(2);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleX(1);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+// тулефон
+
+@media screen and (max-width: 768px) {
+    .shop {
+
+        &__logo {
+            width: 440px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width: 800px;
+        }
+
+        &__item {
+            border: 1px solid black;
+            width: 350px;
+            padding: 5px;
+            box-shadow: 1px 1px 5px 1px black;
+        }
+
+        &__img {
+            display: block;
+            margin: 0 auto;
+            width: 150;
+
+        }
+
+        &__text {
+            width: 350px;
+            padding: 20px 40px;
+            font-family: "Cormorant SC", serif;
+            text-align: center;
+        }
+
+        &__video {
+            margin: 0 auto;
+            width: 600px;
+            border-radius: var(--img-border-radius);
+        }
+
+
+        &__videos {
+            margin-left: 4px;
+            width: 422px;
+            border-radius: 30px;
+        }
+
+        &__box {
+            position: relative;
+            // width: 300px;
+            // height: 300px;
+            // @extend .mini-box-size;
+            margin: 0 auto;
+            // background-image: url("./img/4.webp");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        .omega {
+            background-image: url("../img/ostrovit-omega3-vitamin-d3-k2.jpg");
+        }
+
+        .vitamindC {
+            background-image: url("../img/4.webp");
+        }
+
+        .vitamind3 {
+            background-image: url("../img/d3-5000-1.png");
+        }
+
+        .MultiVitamin {
+            background-image: url("../img/5.jpg");
+        }
+
+        .WheyProtein {
+            background-image: url("../img/7.png");
+        }
+
+        .Massap {
+            background-image: url("../img/d3-5000-1.png");
+        }
+
+        .Creatine {
+            background-image: url("../img/prime_kraft_creatine_monohydrate_pure_200-637x637.png");
+        }
+
+        .Bcaacaps {
+            background-image: url("../img/bcaa-3d-1.webp");
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #8a7088;
+            transform: translatey(100%);
+            transition: transform 250ms ease-in-out;
+        }
+
+        &__box:hover .overlay {
+            transform: translatey(0);
+        }
+
+        .overlay p {
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .overlay code {
+            display: inline-block;
+            padding: 2px 4px;
+            border-radius: 2px;
+            background-color: #fff;
+            color: #2a2a2a;
+        }
+
+        &__card {
+            width: 300px;
+        }
+
+        &__btn {
+            padding: 10px 14px;
+            background-color: $bg-btn-buy;
+            border: none;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        &__btn:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        &__btn:active {
+            background-color: rgb(48, 43, 43);
+        }
+
+    }
+
+    /* shop кнопки */
+    .puff-in-hor:hover {
+        animation: puff-in-hor 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+
+
+    @keyframes puff-in-hor {
+        0% {
+            transform: scaleX(2);
+            filter: blur(4px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: scaleX(1);
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+}

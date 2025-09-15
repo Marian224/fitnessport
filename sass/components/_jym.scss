@@ -54,14 +54,14 @@
 
 @media screen and (max-width: 768px) {
     .jym {
-        padding-left: 40px;
-        // @extend .flex-wrap-center;
+        // padding-left: 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         padding: 60px 20px;
 
         &__container {
+            padding-left: 28px;
             display: flex;
             flex-direction: column;
             width: 512px;

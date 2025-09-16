@@ -22,7 +22,6 @@
         display: block;
         margin: 0 auto;
         width: 150;
-
     }
 
     &__text {
@@ -37,18 +36,14 @@
         border-radius: var(--img-border-radius);
     }
 
-
     &__videos {
         border-radius: 30px;
     }
 
     &__box {
         position: relative;
-        // width: 300px;
-        // height: 300px;
         @extend .mini-box-size;
         margin: 0 auto;
-        // background-image: url("./img/4.webp");
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -138,14 +133,12 @@
     &__btn:active {
         background-color: rgb(48, 43, 43);
     }
-
 }
 
 /* shop кнопки */
 .puff-in-hor:hover {
     animation: puff-in-hor 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
-
 
 @keyframes puff-in-hor {
     0% {
@@ -160,7 +153,6 @@
         opacity: 1;
     }
 }
-
 
 // тулефон
 
@@ -208,7 +200,6 @@
             border-radius: var(--img-border-radius);
         }
 
-
         &__videos {
             margin-left: 4px;
             width: 422px;
@@ -217,11 +208,7 @@
 
         &__box {
             position: relative;
-            // width: 300px;
-            // height: 300px;
-            // @extend .mini-box-size;
             margin: 0 auto;
-            // background-image: url("./img/4.webp");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -311,14 +298,12 @@
         &__btn:active {
             background-color: rgb(48, 43, 43);
         }
-
     }
 
     /* shop кнопки */
     .puff-in-hor:hover {
         animation: puff-in-hor 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
     }
-
 
     @keyframes puff-in-hor {
         0% {

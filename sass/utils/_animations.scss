@@ -16,13 +16,11 @@
     }
 }
 
-
 .focus-in-expand-fwd {
     animation: focus-in-expand-fwd 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     text-align: center;
     text-shadow: 2px 2px 8px black;
 }
-
 
 @keyframes focus-in-expand-fwd {
     0% {
@@ -43,8 +41,6 @@
     animation: rotate-in-2-ccw 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-
-
 @keyframes rotate-in-2-ccw {
     0% {
         transform: rotate(45deg);
@@ -56,7 +52,6 @@
         opacity: 1;
     }
 }
-
 
 .rotate-center:hover {
     animation: rotate-center 0.6s ease-in-out both;
@@ -75,7 +70,6 @@
 .shake-horizontal {
     animation: shake-horizontal infinite 30s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
-
 
 @keyframes shake-horizontal {
 
@@ -110,7 +104,6 @@
     animation: pulsate-bck 1s ease-in-out infinite both;
 }
 
-
 @keyframes pulsate-bck {
     0% {
         transform: scale(1);
@@ -134,8 +127,6 @@
     border-radius: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    /* box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); */
 }
 
 .box-animation::before {
@@ -143,15 +134,11 @@
     font-size: 20px;
 }
 
-
 .box-animation:nth-child(1) {
-    /*   transform: rotate(30deg); */
     background-color: rgba(255, 255, 255, 0);
 
     animation: animate30 3000ms infinite 1000ms;
 }
-
-
 
 @keyframes animate30 {
     0% {
@@ -172,7 +159,6 @@
     cursor: pointer;
 }
 
-
 @keyframes fade-in-fwd {
     0% {
         transform: translateZ(-80px);
@@ -184,7 +170,6 @@
         opacity: 1;
     }
 }
-
 
 // тулефон
 
@@ -207,14 +192,12 @@
         }
     }
 
-
     .focus-in-expand-fwd {
         width: 465px;
         animation: focus-in-expand-fwd 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         text-align: center;
         text-shadow: 2px 2px 8px black;
     }
-
 
     @keyframes focus-in-expand-fwd {
         0% {
@@ -235,8 +218,6 @@
         animation: rotate-in-2-ccw 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
-
-
     @keyframes rotate-in-2-ccw {
         0% {
             transform: rotate(45deg);
@@ -248,7 +229,6 @@
             opacity: 1;
         }
     }
-
 
     .rotate-center:hover {
         animation: rotate-center 0.6s ease-in-out both;
@@ -267,7 +247,6 @@
     .shake-horizontal {
         animation: shake-horizontal infinite 30s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
     }
-
 
     @keyframes shake-horizontal {
 
@@ -302,7 +281,6 @@
         animation: pulsate-bck 1s ease-in-out infinite both;
     }
 
-
     @keyframes pulsate-bck {
         0% {
             transform: scale(1);
@@ -326,8 +304,6 @@
         border-radius: 10px;
         margin-left: 10px;
         margin-right: 10px;
-        /* box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); */
     }
 
     .box-animation::before {
@@ -335,15 +311,11 @@
         font-size: 20px;
     }
 
-
     .box-animation:nth-child(1) {
-        /*   transform: rotate(30deg); */
         background-color: rgba(255, 255, 255, 0);
 
         animation: animate30 3000ms infinite 1000ms;
     }
-
-
 
     @keyframes animate30 {
         0% {
@@ -364,7 +336,6 @@
         cursor: pointer;
     }
 
-
     @keyframes fade-in-fwd {
         0% {
             transform: translateZ(-80px);
@@ -376,5 +347,4 @@
             opacity: 1;
         }
     }
-
 }

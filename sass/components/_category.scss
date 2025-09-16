@@ -1,5 +1,4 @@
 .category {
-
     &__item {
         border: 1px solid black;
         width: 400px;
@@ -14,8 +13,6 @@
         display: flex;
         gap: 30px;
         list-style: none;
-
-
     }
 
     &__title {
@@ -58,7 +55,6 @@
         object-fit: cover;
     }
 
-
     &__thumb>&__label {
         position: absolute;
         bottom: 0;
@@ -66,7 +62,6 @@
         left: 0;
         padding: 8px 16px;
         border-bottom-left-radius: 4px;
-
         font-family: sans-serif;
         font-size: 24px;
         background-color: #2196f3;
@@ -75,7 +70,6 @@
 
     &__img {
         display: block;
-        /* max-width: 100%; */
         height: auto;
     }
 
@@ -98,7 +92,6 @@
     }
 
 }
-
 
 // тулефон
 
@@ -125,8 +118,6 @@
             display: flex;
             gap: 30px;
             list-style: none;
-
-
         }
 
         &__title {
@@ -171,7 +162,6 @@
             object-fit: cover;
         }
 
-
         &__thumb>&__label {
             position: absolute;
             bottom: 0;
@@ -188,7 +178,6 @@
 
         &__img {
             display: block;
-            /* max-width: 100%; */
             height: auto;
         }
 
@@ -209,8 +198,5 @@
         &__buy:active {
             background-color: rgb(48, 43, 43);
         }
-
-
-
     }
 }

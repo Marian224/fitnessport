@@ -2,11 +2,8 @@
 
 .body {
     background: #E8CBC0;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #636FA4, #E8CBC0);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -18,7 +15,6 @@
     display: block;
     align-items: center;
     justify-content: center;
-
 }
 
 body {
@@ -42,8 +38,6 @@ main {
     flex-grow: 1;
 }
 
-
-
 .main-photo {
     border-radius: $img-border-radius;
     display: block;
@@ -56,44 +50,31 @@ main {
 
 .icon {
     fill: #ffffff;
-
 }
 
 .icon:hover {
     fill: #4f7b8f;
 }
 
-
-// .mini-box-size{
-//     width: 300px;
-//     height: 300px;
-// }
-
-
 // тулефон
 
 @media screen and (max-width: 768px) {
     .body {
         background: #E8CBC0;
-        /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);
-        /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #636FA4, #E8CBC0);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         display: flex;
         flex-direction: column;
         min-height: 100vh;
     }
 
-    .section-photo{
+    .section-photo {
         margin-left: 22px;
     }
-
 
     .container-width {
         width: 500px;
     }
-
 
     .container {
         width: 500px;
@@ -101,7 +82,6 @@ main {
         display: block;
         align-items: center;
         justify-content: center;
-
     }
 
     body {
@@ -125,17 +105,11 @@ main {
         flex-grow: 1;
     }
 
-
-
     .main-photo {
         border-radius: $img-border-radius;
         display: block;
         margin: 0 auto;
     }
-
-    // .icon-list {
-    //     @extend .list-base-set;
-    // }
 
     .icon {
         fill: #ffffff;
@@ -145,10 +119,4 @@ main {
     .icon:hover {
         fill: #4f7b8f;
     }
-
-
-    // .mini-box-size{
-    //     width: 300px;
-    //     height: 300px;
-    // }
 }

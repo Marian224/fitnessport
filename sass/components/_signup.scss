@@ -1,10 +1,6 @@
 .signup {
-
     &__icon {
-        /* border: 2px dashed #2a2a2a;
-  border-radius: 8px; */
         fill: #ffffff;
-
     }
 
     &__icon:hover {
@@ -40,7 +36,6 @@
 
 }
 
-
 // тулефон
 
 @media screen and (max-width: 768px) {
@@ -51,10 +46,7 @@
         margin-left: 27px;
 
         &__icon {
-            /* border: 2px dashed #2a2a2a;
-  border-radius: 8px; */
             fill: #ffffff;
-
         }
 
         &__icon:hover {
@@ -77,7 +69,6 @@
             padding-left: 60px;
             border-radius: 20px;
             background-color: rgb(232, 229, 229);
-
         }
 
         &__input {
@@ -86,13 +77,11 @@
             padding: 7px;
             border-radius: 15px;
             border: none;
-
         }
 
         &__label {
             padding-right: 20px;
             margin-left: -47px;
         }
-
     }
 }

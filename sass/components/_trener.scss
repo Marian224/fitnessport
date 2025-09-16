@@ -1,11 +1,9 @@
 @import '../utils/extends';
 
 .trener {
-
     &__pane {
         display: none;
         margin-top: 8px;
-
     }
 
     &__pane-is-active {
@@ -21,7 +19,6 @@
         padding: 20px;
         margin: 0 auto;
         width: 900px;
-
     }
 
     &__title {
@@ -75,7 +72,6 @@
         margin: 0px 50px;
     }
 
-
     &__table {
         text-align: center;
         font-family: "Bitter", serif;
@@ -91,7 +87,6 @@
         color: black;
         border: 1px solid black;
         padding: 10px;
-
     }
 
     &__link:hover {
@@ -110,10 +105,7 @@
         width: 100px;
         border: 1px solid rgb(70, 69, 69);
         border-radius: 6px;
-
     }
-
-
 
     &__description {
         font-family: "Cormorant SC", serif;
@@ -125,7 +117,6 @@
         color: #212121;
         background-color: #f9f9fd;
     }
-
 }
 
 
@@ -137,7 +128,6 @@
         &__pane {
             display: none;
             margin-top: 8px;
-
         }
 
         &__pane-is-active {
@@ -153,7 +143,6 @@
             padding: 20px;
             margin: 0 auto;
             width: 900px;
-
         }
 
         &__title {
@@ -162,7 +151,6 @@
         }
 
         &__flex {
-            // @extend .flex-wrap-center;
             gap: 30px;
             flex-basis: calc((100% - 20px) / 3);
             width: 500px;
@@ -210,7 +198,6 @@
             margin: 0px 50px;
         }
 
-
         &__table {
             text-align: center;
             font-family: "Bitter", serif;
@@ -226,7 +213,6 @@
             color: black;
             border: 1px solid black;
             padding: 10px;
-
         }
 
         &__link:hover {
@@ -245,10 +231,7 @@
             width: 100px;
             border: 1px solid rgb(70, 69, 69);
             border-radius: 6px;
-
         }
-
-
 
         &__description {
             font-family: "Cormorant SC", serif;
@@ -260,8 +243,5 @@
             color: #212121;
             background-color: #f9f9fd;
         }
-
-
-
     }
 }

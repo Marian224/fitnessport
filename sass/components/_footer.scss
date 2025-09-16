@@ -24,14 +24,11 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh
 }
-
-
 
 // тулефон
 
@@ -50,7 +47,6 @@
             justify-content: center;
             align-items: center;
         }
-
     }
 
     .footer {
@@ -63,7 +59,6 @@
     .text-footer {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-
 
     .wrapper {
         display: flex;

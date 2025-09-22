@@ -1,5 +1,21 @@
 @import '../utils/extends';
 
+// js
+
+.pane.is-active {
+    display: block;
+}
+
+.pane {
+    display: none;
+    margin-top: 8px;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+}
+
 .trener {
     &__pane {
         display: none;

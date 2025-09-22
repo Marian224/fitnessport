@@ -58,3 +58,46 @@
         }
     }
 }
+
+// планшет
+
+@media screen and (max-width: 1023px) {
+    .hall {
+        width: 500px;
+        margin-left: -27px;
+
+        &__title {
+            margin-left: -83px;
+            margin-top: 34px;
+            width: 665px;
+            font-family: $title-section;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        &__photo {
+            margin-left: -39px;
+            width: 613px;
+            $border-radius: $img-border-radius;
+            display: block;
+            // margin: 0 auto;
+            box-shadow: 2px 2px 9px 4px rgb(63, 61, 61);
+        }
+
+        &__text {
+            height: 315px;
+            margin-left: 115px;
+            width: 341px;
+            font-family: $font-paragraph;
+            padding: 10px;
+            text-indent: 10px;
+            line-height: 20px;
+            word-spacing: 5px;
+            // max-height: 250px;
+            background-color: slategrey;
+            border: 2px solid black;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08)
+        }
+    }
+}

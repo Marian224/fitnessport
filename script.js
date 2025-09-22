@@ -5,7 +5,7 @@ controls.addEventListener("click", (e) => {
     return;
   }
 
-  const prevActivePane = document.querySelector(".pane-is-active");
+  const prevActivePane = document.querySelector(".pane.is-active");
   if (prevActivePane) {
     prevActivePane.classList.remove("is-active");
   }

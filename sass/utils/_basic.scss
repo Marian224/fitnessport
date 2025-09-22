@@ -69,7 +69,76 @@ main {
     }
 
     .section-photo {
-        margin-left: 22px;
+        margin-left: 8px;
+    }
+
+    .container-width {
+        width: 500px;
+    }
+
+    .container {
+        width: 500px;
+        margin: 0 auto;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+
+    .main-photo {
+        border-radius: $img-border-radius;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .icon {
+        fill: #ffffff;
+
+    }
+
+    .icon:hover {
+        fill: #4f7b8f;
+    }
+}
+
+
+
+
+// планшет
+
+
+@media screen and (max-width: 1023px) {
+    .body {
+        background: #E8CBC0;
+        background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);
+        background: linear-gradient(to right, #636FA4, #E8CBC0);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .section-photo {
+        margin-left: -27px;
     }
 
     .container-width {

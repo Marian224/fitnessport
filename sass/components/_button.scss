@@ -48,3 +48,31 @@
     }
 
 }
+
+// планшет
+
+@media screen and (max-width: 1023px) {
+    .main-btn {
+        margin-top: 5px;
+        padding: 10px 15px;
+        background-color: rgb(167, 146, 146);
+        border: none;
+        border: 1px solid black;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+
+    .main-btn:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    .main-btn:active {
+        background-color: rgb(48, 47, 47);
+    }
+
+    .main-btn-form {
+        margin-top: 20px;
+    }
+}

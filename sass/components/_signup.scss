@@ -85,3 +85,55 @@
         }
     }
 }
+
+// планшет
+
+
+@media screen and (max-width: 1023px) {
+    .signup {
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+        margin-left: 27px;
+
+        &__icon {
+            fill: #ffffff;
+        }
+
+        &__icon:hover {
+            fill: #4f7b8f;
+        }
+
+        &__form {
+            fill: black;
+            padding-left: 5px;
+        }
+
+        &__block {
+            margin-left: 21px;
+            display: flex;
+            flex-direction: column;
+            margin-left: -61px;
+            width: 588px;
+            gap: 100px;
+            border: 1px solid black;
+            padding: 10px;
+            padding-left:80px;
+            border-radius: 20px;
+            background-color: rgb(232, 229, 229);
+        }
+
+        &__input {
+            margin-left: -55px;
+            width: 360px;
+            padding: 7px;
+            border-radius: 15px;
+            border: none;
+        }
+
+        &__label {
+            padding-right: 20px;
+            margin-left: -47px;
+        }
+    }
+}

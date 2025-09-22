@@ -1,4 +1,5 @@
 @import '../utils/extends';
+
 .lobby {
     padding: 30px;
 
@@ -140,6 +141,94 @@
     .interesting {
         width: 500px;
         margin-left: 43px;
+
+        &__answer {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        &__question {
+            font-family: "Bitter", serif;
+        }
+    }
+}
+
+// планшет
+
+@media screen and (max-width: 1023px) {
+    @import '../utils/extends';
+
+    .mini-box-size-iframe {
+        margin-right: -21px;
+        width: 350px;
+        height: 250px;
+        margin-left: 8px;
+    }
+
+    .text-margin {
+        margin-left: -5px;
+    }
+
+    .lobby {
+        padding: 30px;
+        margin-left: -104px;
+        width: 829px;
+
+        &__block {
+            display: flex;
+            // flex-direction: column;
+            gap: 30px;
+        }
+
+        /* перехід */
+
+        &__box {
+            border-radius: 10px;
+            background-color: tomato;
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+            transition-property: background-color, transform;
+            transition-duration: 1000ms;
+            transition-timing-function: linear;
+            transition-delay: 0;
+        }
+
+        &__box:hover {
+            background-color: teal;
+            transform: rotate(360deg);
+        }
+
+        &__box-contact {
+            width: 150px;
+            height: 45px;
+            border-radius: 2px;
+            background-color: rgb(207, 190, 190);
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+            transition-property: background-color, transform;
+            transition-duration: 600ms;
+            transition-timing-function: linear;
+            transition-delay: 0;
+        }
+
+        &__box-contact:hover {
+            background-color: rgb(3, 165, 157);
+            transform: rotate(360deg);
+        }
+    }
+
+    .iframe-map {
+        margin-left:-59px;
+        width: 586px;
+    }
+
+    .map {
+        width: 500px;
+        margin-left: 30px;
+    }
+
+    .interesting {
+        width: 500px;
+        margin-left: -22px;
 
         &__answer {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

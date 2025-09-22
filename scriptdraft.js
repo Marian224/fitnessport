@@ -1,4 +1,4 @@
-const controls = document.querySelector(".controls");
+const controls = document.querySelector(".trener__controls");
 
 controls.addEventListener("click", (e) => {
   if (e.target === e.currentTarget) {

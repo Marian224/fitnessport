@@ -181,6 +181,125 @@ header {
         margin-top: 12px;
         position: relative;
         margin-top: 12px;
+
+        &__text {
+            color: #fc0000;
+            width: 100px;
+        }
+
+        &__form {
+            height: 0px;
+            width: 236px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: end;
+            align-items: flex-start;
+            align-items: baseline;
+            flex-direction: column;
+            position: absolute;
+            right: 10px;
+            top: 31px;
+        }
+
+        &__input {
+            width: 100px;
+        }
+    }
+}
+
+// планшет
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        margin-left: -179px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -85px;
+        gap: 10px;
+        list-style: none;
+        text-transform: uppercase;
+        border: 1px solid rgb(146, 143, 143);
+        border-radius: 10px;
+        padding: 5px 5px;
+        width: 188px;
+        background-color: rgba(0, 0, 0, 0.507);
+        justify-content: space-between;
+    }
+
+    .menu-home {
+        margin-left: -179px;
+        margin-top: -163px;
+    }
+
+    .menu-link {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+
+    .menu-link:hover {
+        color: $menu-link-hover;
+    }
+
+    .section-header {
+        background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240329/pngtree-rows-of-dumbbells-in-the-gym-image_15662386.jpg');
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 100px;
+        position: relative;
+    }
+
+    header {
+        width: 430px;
+        margin: 0 auto;
+    }
+
+
+    .text-shadow-pop-top:hover {
+        animation: text-shadow-pop-top 0.6s both;
+    }
+
+    @keyframes text-shadow-pop-top {
+        0% {
+            text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+            transform: translateY(0);
+        }
+
+        100% {
+            text-shadow: 0 -1px #555555, 0 -2px #555555, 0 -3px #555555, 0 -4px #555555, 0 -5px #555555, 0 -6px #555555, 0 -7px #555555, 0 -8px #555555;
+            transform: translateY(8px);
+        }
+    }
+
+    .slide-in-top {
+        animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @keyframes slide-in-top {
+        0% {
+            transform: translateY(-1000px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .menu-photo {
+        width: 20px;
+    }
+
+    .login {
+        padding-top: 61px;
+        width: 708px;
+        margin-top: 12px;
+        position: relative;
+        margin-top: 12px;
+
         &__text {
             color: #fc0000;
             width: 100px;

@@ -200,3 +200,104 @@
         }
     }
 }
+
+// планшет
+
+@media screen and (max-width: 1023px) {
+    .category {
+        margin-left: 135px;
+
+        &__item {
+            border: 1px solid black;
+            width: 400px;
+            padding: 20px;
+            border-radius: var(--img-border-radius);
+            box-shadow: 1px 1px 8px 1px black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__list {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        &__title {
+            font-family: "Cormorant SC", serif;
+        }
+
+        &__description {
+            font-family: "Cormorant SC", serif;
+        }
+
+        &__img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .category-list-cats {
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__thumb {
+            width: 350px;
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+            object-fit: cover;
+        }
+
+        &__thumb>&__label {
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+            left: 0;
+            padding: 8px 16px;
+            border-bottom-left-radius: 4px;
+            font-family: sans-serif;
+            font-size: 24px;
+            background-color: #2196f3;
+            color: #fff;
+        }
+
+        &__img {
+            display: block;
+            height: auto;
+        }
+
+        &__buy {
+            padding: 10px 14px;
+            background-color: var(--bg-btn-buy);
+            border: none;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        &__buy:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        &__buy:active {
+            background-color: rgb(48, 43, 43);
+        }
+    }
+}
